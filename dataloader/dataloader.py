@@ -3,6 +3,7 @@
 import tensorflow as tf
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.text import tokenizer_from_json
 import pandas as pd
 import numpy as np
 
@@ -34,31 +35,56 @@ class DataLoader:
 
         return training_sentences, training_labels, testing_sentences, testing_labels
 
-        train = dataset['train'].map(lambda image: DataLoader._preprocess_train(image, image_size),
-                                     num_parallel_calls=tf.data.experimental.AUTOTUNE)
-        test = dataset['test'].map(lambda image: DataLoader._preprocess_test(image, image_size))
-
-        train_dataset = train.shuffle(buffer_size).batch(batch_size).cache().repeat()
-        train_dataset = train_dataset.prefetch(buffer_size=tf.data.experimental.AUTOTUNE)
-        test_dataset = test.batch(batch_size)
-
-        return train_dataset, test_dataset
-
     @staticmethod
     def sentence_to_sequence(config, training_sentences, testing_sentences):
-        oov_tok = "<OOV>"
-        tokenizer = Tokenizer(num_words = config.vocab_size, oov_token=oov_tok)
+        """
+        Transform sentence to sequence, after add padding
+
+        Args:
+            
+            training_sentences ([array]): Training sentences
+            testing_sentences ([array]): Test sentences
+
+        Returns:
+            training_padded : Training sequence with padding
+            testing_padded: Test sequence with padding
+        """
+        tokenizer = DataLoader.loadTokenizer(config)
         tokenizer.fit_on_texts(training_sentences)
 
         training_sentences = tokenizer.texts_to_sequences(training_sentences)
-        training_padded = pad_sequences(training_sentences,maxlen=max_length, truncating=trunc_type)
+        training_padded = pad_sequences(training_sentences,maxlen=config.max_length)
 
         testing_sequences = tokenizer.texts_to_sequences(testing_sentences)
-        testing_padded = pad_sequences(testing_sequences,maxlen=max_length)
-        return training_sentences
+        testing_padded = pad_sequences(testing_sequences,maxlen=config.max_length)
+        return training_padded, testing_padded
+
+    @staticmethod
+    def loadTokenizer(config):
+        """ Load Tokeninzer
+        Get vocabulay saved in disk, if notfound create new Tokenizer
+
+        Args:
+            config ([type]): [description]
+        """
+        oov_tok = "<OOV>"
+        tokenizer = Tokenizer(num_words = config.vocab_size, oov_token=oov_tok)
 
     @staticmethod
     def split_dataset(dataset, config):
+        """
+        Split dataset
+
+        Args:
+            dataset ([type]): Pandas dataset
+            config ([type]): Project configurations
+
+        Returns:
+            training_sentences: Training sentences
+            training_labels: Test sentences
+            training_labels: Training labels
+            testing_labels: Test labels
+        """
         df_train = dataset.sample(frac = config.split_train, random_state = config.random_state)
         df_test = dataset.drop(df_train.index)
         
@@ -73,7 +99,7 @@ class DataLoader:
         for index, test in df_test.iterrows():
             testing_sentences.append(str(test['text']))
             testing_labels.append(test['label'])
-            
+
         return training_sentences, training_labels, np.array(training_labels), np.array(testing_labels)
     
     @staticmethod
