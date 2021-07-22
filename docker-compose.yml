@@ -1,0 +1,51 @@
+version: '3.3'
+
+services:
+    db:
+        restart: always
+        image: mysql/mysql-server:5.7.28
+        container_name: mlflow_db
+        expose:
+            - "3306"
+        networks:
+            - backend
+        environment:
+            - MYSQL_DATABASE=mlflow_db
+            - MYSQL_USER=mlflow_user
+            - MYSQL_PASSWORD=mlflow#1930
+            - MYSQL_ROOT_PASSWORD=mlflow#1930
+        volumes:
+            - dbdata:/var/lib/mysql
+
+    web:
+        restart: always
+        build: ./mlflow
+        image: mlflow_server
+        container_name: mlflow_server
+        expose:
+            - "5000"
+        networks:
+            - frontend
+            - backend
+        command: mlflow server --backend-store-uri mysql+pymysql://mlflow_user:mlflow#1930@db:3306/mlflow_db --default-artifact-root file://mlflow_bucket/mlflow/ --host 0.0.0.0        
+
+    nginx:
+        restart: always
+        build: ./nginx
+        image: mlflow_nginx
+        container_name: mlflow_nginx
+        ports:
+            - "80:80"
+        networks:
+            - frontend
+        depends_on:
+            - web
+
+networks:
+    frontend:
+        driver: bridge
+    backend:
+        driver: bridge
+
+volumes:
+    dbdata:

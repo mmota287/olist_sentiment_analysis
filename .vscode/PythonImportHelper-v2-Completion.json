@@ -1,0 +1,665 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "tensorflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tensorflow",
+        "description": "tensorflow",
+        "detail": "tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "Flask",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "request",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "jsonify",
+        "importPath": "flask",
+        "description": "flask",
+        "isExtraImport": true,
+        "detail": "flask",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "olist_sentiment_analysis.dataloader.dataloader",
+        "description": "olist_sentiment_analysis.dataloader.dataloader",
+        "isExtraImport": true,
+        "detail": "olist_sentiment_analysis.dataloader.dataloader",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
+        "importPath": "olist_sentiment_analysis.dataloader.dataloader",
+        "description": "olist_sentiment_analysis.dataloader.dataloader",
+        "isExtraImport": true,
+        "detail": "olist_sentiment_analysis.dataloader.dataloader",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "ClearDataFnType",
+        "importPath": "olist_sentiment_analysis.dataset",
+        "description": "olist_sentiment_analysis.dataset",
+        "isExtraImport": true,
+        "detail": "olist_sentiment_analysis.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "SplitDatasetFnType",
+        "importPath": "olist_sentiment_analysis.dataset",
+        "description": "olist_sentiment_analysis.dataset",
+        "isExtraImport": true,
+        "detail": "olist_sentiment_analysis.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "TransformToSeqFnType",
+        "importPath": "olist_sentiment_analysis.dataset",
+        "description": "olist_sentiment_analysis.dataset",
+        "isExtraImport": true,
+        "detail": "olist_sentiment_analysis.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "numpy.core.records",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy.core.records",
+        "description": "numpy.core.records",
+        "detail": "numpy.core.records",
+        "documentation": {}
+    },
+    {
+        "label": "array",
+        "importPath": "numpy.core.records",
+        "description": "numpy.core.records",
+        "isExtraImport": true,
+        "detail": "numpy.core.records",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "tensorflow.keras.preprocessing.text",
+        "description": "tensorflow.keras.preprocessing.text",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.preprocessing.text",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer_from_json",
+        "importPath": "tensorflow.keras.preprocessing.text",
+        "description": "tensorflow.keras.preprocessing.text",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.preprocessing.text",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "tensorflow.keras.preprocessing.text",
+        "description": "tensorflow.keras.preprocessing.text",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.preprocessing.text",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer_from_json",
+        "importPath": "tensorflow.keras.preprocessing.text",
+        "description": "tensorflow.keras.preprocessing.text",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.preprocessing.text",
+        "documentation": {}
+    },
+    {
+        "label": "Tokenizer",
+        "importPath": "tensorflow.keras.preprocessing.text",
+        "description": "tensorflow.keras.preprocessing.text",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.preprocessing.text",
+        "documentation": {}
+    },
+    {
+        "label": "tokenizer_from_json",
+        "importPath": "tensorflow.keras.preprocessing.text",
+        "description": "tensorflow.keras.preprocessing.text",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.preprocessing.text",
+        "documentation": {}
+    },
+    {
+        "label": "pad_sequences",
+        "importPath": "tensorflow.keras.preprocessing.sequence",
+        "description": "tensorflow.keras.preprocessing.sequence",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.preprocessing.sequence",
+        "documentation": {}
+    },
+    {
+        "label": "pad_sequences",
+        "importPath": "tensorflow.keras.preprocessing.sequence",
+        "description": "tensorflow.keras.preprocessing.sequence",
+        "isExtraImport": true,
+        "detail": "tensorflow.keras.preprocessing.sequence",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "curry",
+        "importPath": "toolz",
+        "description": "toolz",
+        "isExtraImport": true,
+        "detail": "toolz",
+        "documentation": {}
+    },
+    {
+        "label": "curry",
+        "importPath": "toolz",
+        "description": "toolz",
+        "isExtraImport": true,
+        "detail": "toolz",
+        "documentation": {}
+    },
+    {
+        "label": "io",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "io",
+        "description": "io",
+        "detail": "io",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "display",
+        "importPath": "utils.plot_image",
+        "description": "utils.plot_image",
+        "isExtraImport": true,
+        "detail": "utils.plot_image",
+        "documentation": {}
+    },
+    {
+        "label": "Config",
+        "importPath": "utils.config",
+        "description": "utils.config",
+        "isExtraImport": true,
+        "detail": "utils.config",
+        "documentation": {}
+    },
+    {
+        "label": "CFG",
+        "importPath": "configs.config",
+        "description": "configs.config",
+        "isExtraImport": true,
+        "detail": "configs.config",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "Namespace",
+        "importPath": "argparse",
+        "description": "argparse",
+        "isExtraImport": true,
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "plot_model",
+        "importPath": "keras.utils.vis_utils",
+        "description": "keras.utils.vis_utils",
+        "isExtraImport": true,
+        "detail": "keras.utils.vis_utils",
+        "documentation": {}
+    },
+    {
+        "label": "Logger",
+        "importPath": "logging",
+        "description": "logging",
+        "isExtraImport": true,
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "dataset",
+        "importPath": "olist_sentiment_analysis",
+        "description": "olist_sentiment_analysis",
+        "isExtraImport": true,
+        "detail": "olist_sentiment_analysis",
+        "documentation": {}
+    },
+    {
+        "label": "lstm",
+        "importPath": "olist_sentiment_analysis.models",
+        "description": "olist_sentiment_analysis.models",
+        "isExtraImport": true,
+        "detail": "olist_sentiment_analysis.models",
+        "documentation": {}
+    },
+    {
+        "label": "ExtendedTensorBoard",
+        "importPath": "olist_sentiment_analysis.utils.tensorflow_extended",
+        "description": "olist_sentiment_analysis.utils.tensorflow_extended",
+        "isExtraImport": true,
+        "detail": "olist_sentiment_analysis.utils.tensorflow_extended",
+        "documentation": {}
+    },
+    {
+        "label": "mlflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mlflow",
+        "description": "mlflow",
+        "detail": "mlflow",
+        "documentation": {}
+    },
+    {
+        "label": "mlflow.tensorflow",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "mlflow.tensorflow",
+        "description": "mlflow.tensorflow",
+        "detail": "mlflow.tensorflow",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "importPath": "utils.logger",
+        "description": "utils.logger",
+        "isExtraImport": true,
+        "detail": "utils.logger",
+        "documentation": {}
+    },
+    {
+        "label": "LOG",
+        "importPath": "olist_sentiment_analysis.models.lstm.train",
+        "description": "olist_sentiment_analysis.models.lstm.train",
+        "isExtraImport": true,
+        "detail": "olist_sentiment_analysis.models.lstm.train",
+        "documentation": {}
+    },
+    {
+        "label": "ABC",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "abstractmethod",
+        "importPath": "abc",
+        "description": "abc",
+        "isExtraImport": true,
+        "detail": "abc",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "logging.config",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging.config",
+        "description": "logging.config",
+        "detail": "logging.config",
+        "documentation": {}
+    },
+    {
+        "label": "yaml",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yaml",
+        "description": "yaml",
+        "detail": "yaml",
+        "documentation": {}
+    },
+    {
+        "label": "classify_sentence",
+        "kind": 2,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "def classify_sentence(sentence):\n    sequence = DataLoader.preprocess_data(sentence)\n    predict_prob = model.predict(sequence)\n    return jsonify({\n        \"text\": sentence,\n        \"prob\": predict_prob,\n        \"classe\": np.where(predict_prob > 0.5, 1, 0)\n    })\napp.run(port=5000, debug=False)",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "app.app",
+        "description": "app.app",
+        "peekOfCode": "app = Flask(__name__)\n@app.route('/predict/<string:sentence>', methods=['POST'])\ndef classify_sentence(sentence):\n    sequence = DataLoader.preprocess_data(sentence)\n    predict_prob = model.predict(sequence)\n    return jsonify({\n        \"text\": sentence,\n        \"prob\": predict_prob,\n        \"classe\": np.where(predict_prob > 0.5, 1, 0)\n    })",
+        "detail": "app.app",
+        "documentation": {}
+    },
+    {
+        "label": "ConfigModelType",
+        "kind": 5,
+        "importPath": "configs.types",
+        "description": "configs.types",
+        "peekOfCode": "ConfigModelType = Dict[str, Any]",
+        "detail": "configs.types",
+        "documentation": {}
+    },
+    {
+        "label": "load_from_file",
+        "kind": 2,
+        "importPath": "dataset.load",
+        "description": "dataset.load",
+        "peekOfCode": "def load_from_file(path: str, clear_fn: ClearDataFnType) -> pd.DataFrame:\n    \"\"\"Load Dataset from file\n    Args:\n        path (str): File path\n        clear_fn (ClearDataFnType): Clear function\n    Returns:\n        pd.DataFrame: Dataframe loaded\n    \"\"\"\n    df = pd.read_csv(path)\n    if clear_fn is None:",
+        "detail": "dataset.load",
+        "documentation": {}
+    },
+    {
+        "label": "clear_data_fn",
+        "kind": 2,
+        "importPath": "dataset.load",
+        "description": "dataset.load",
+        "peekOfCode": "def clear_data_fn(df: pd.DataFrame, column_text: str, column_label: str,\n        bins: array = [0, 2, 5], classes: array = [0,1]) -> pd.DataFrame:\n    \"\"\"\n    Clear dataframe loaded\n    Args:\n        df (pd.DataFrame): Dataframe loaded\n        column_text (str): Column text\n        column_label (str): Column label\n        bins (array, optional): Column score. Defaults to [].\n        classes (array, optional): Sentiments classe. Defaults to [0,1].",
+        "detail": "dataset.load",
+        "documentation": {}
+    },
+    {
+        "label": "transform_to_sequence_fn",
+        "kind": 2,
+        "importPath": "dataset.preprocess",
+        "description": "dataset.preprocess",
+        "peekOfCode": "def transform_to_sequence_fn(\n        sentences: np.array,\n        tokenizer: Tokenizer,\n        max_length: int) -> np.array:\n    \"\"\"Transfom sentences into sequences padded\n    Args:\n        sentences (np.array): Sequences\n        tokenizer (Tokenizer): Tensorflow Tokenizer\n        max_length (int): [description]\n    Returns:",
+        "detail": "dataset.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "split_ds_fn",
+        "kind": 2,
+        "importPath": "dataset.preprocess",
+        "description": "dataset.preprocess",
+        "peekOfCode": "def split_ds_fn(\n        dataset: tf.data.Dataset,\n        train_size=0.7,\n        val_size=0.15,\n        test_size=0.15) -> Tuple[tf.data.Dataset, tf.data.Dataset,tf.data.Dataset]:\n    \"\"\"Split dataset\n    Args:\n        dataset (tf.data.Dataset): [description]\n    Returns:\n        Tuple[tf.data.Dataset, tf.data.Dataset,tf.data.Dataset]: [description]",
+        "detail": "dataset.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_fn",
+        "kind": 2,
+        "importPath": "dataset.preprocess",
+        "description": "dataset.preprocess",
+        "peekOfCode": "def preprocess_fn(\n    df: pd.DataFrame, \n    transfom_to_seq_fn: TransformToSeqFnType, \n    split_ds_fn: SplitDatasetFnType) -> Tuple[tf.data.Dataset, tf.data.Dataset]:\n    \"\"\" Process dataframe and split into training and testing\n    Args:\n        df (pd.DataFrame): Pandas dataframe\n        transfom_to_seq_fn (TransformToSeqFnType): Transform function to sequence\n        split_ds_fn (SplitDatasetFnType): Dataset division function\n    Returns:",
+        "detail": "dataset.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "load_tokenizer",
+        "kind": 2,
+        "importPath": "dataset.vectorizer",
+        "description": "dataset.vectorizer",
+        "peekOfCode": "def load_tokenizer(vectorizer_file: str = 'vectorizer.json',  vocab_size: int = None) -> Tokenizer:\n    \"\"\"Load tokenizer from file or Create a new with [vocab_size]\n    Args:\n        vectorizer_file (str, optional): Vectorizer file path. Defaults to 'vectorizer.json'.\n        vocab_size (int, optional): Vocabulary Size. Defaults to None.\n    Raises:\n        Exception: If notfound [vectorizer_file] and not informed [vocab_size]\n    Returns:\n        Tokenizer: Tensorflow Tokenizer\n    \"\"\"",
+        "detail": "dataset.vectorizer",
+        "documentation": {}
+    },
+    {
+        "label": "save_tokenizer",
+        "kind": 2,
+        "importPath": "dataset.vectorizer",
+        "description": "dataset.vectorizer",
+        "peekOfCode": "def save_tokenizer(tokenizer: Tokenizer, vectorizer_file: str = 'vectorizer.json') -> None:\n    \"\"\"Save tokenizer in [vectorizer_file]\n    Args:\n        tokenizer (Tokenizer): Tensorflow Tokenizer\n        vectorizer_file (str, optional): Vectorizer file path. Defaults to 'vectorizer.json'.\n    \"\"\"\n    tokenizer_json = tokenizer.to_json()\n    with io.open(vectorizer_file, 'w', encoding='utf-8') as f:\n        f.write(json.dumps(tokenizer_json, ensure_ascii=False))\ndef fit_tokenizer(sentences: np.array, vocab_size: int) -> Tokenizer:",
+        "detail": "dataset.vectorizer",
+        "documentation": {}
+    },
+    {
+        "label": "fit_tokenizer",
+        "kind": 2,
+        "importPath": "dataset.vectorizer",
+        "description": "dataset.vectorizer",
+        "peekOfCode": "def fit_tokenizer(sentences: np.array, vocab_size: int) -> Tokenizer:\n    tokenizer: load_tokenizer(vocab_size=vocab_size)\n    tokenizer.fit_on_texts(sentences)\n    save_tokenizer(tokenizer)\n    return tokenizer",
+        "detail": "dataset.vectorizer",
+        "documentation": {}
+    },
+    {
+        "label": "evaluete_fn",
+        "kind": 2,
+        "importPath": "models.lstm.evaluate",
+        "description": "models.lstm.evaluate",
+        "peekOfCode": "def evaluete_fn(predict_func, sequences_test: np.array, labels_test: np.array) -> dict:\n    return {\n        'acc': 0,\n        'precision': 0,\n        'recal': 0,\n        'f1': 1,\n        'auc': 1\n    }",
+        "detail": "models.lstm.evaluate",
+        "documentation": {}
+    },
+    {
+        "label": "predict",
+        "kind": 2,
+        "importPath": "models.lstm.inference",
+        "description": "models.lstm.inference",
+        "peekOfCode": "def predict(sentence: str) -> dict:\n    model = tf.keras.models.model_from_json(model_json)\n    model.load_weights('fashion_model_flask.h5')\n    sequence = DataLoader.preprocess_data(sentence)\n    predict_prob = model.predict(sequence)\n    return {\n        \"text\": sentence,\n        \"prob\": predict_prob,\n        \"classe\": np.where(predict_prob > 0.5, 1, 0)\n    }",
+        "detail": "models.lstm.inference",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "models.lstm.main",
+        "description": "models.lstm.main",
+        "peekOfCode": "args = Namespace(\n    dataset_csv = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv',\n    train_split = 0.8,\n    random_state = 42,\n    vocab_size = 10000,\n    embedding_dim = 16,\n    max_length = 120,\n    batch_size=128,\n    num_epochs=5,\n    early_stopping_criteria=2,",
+        "detail": "models.lstm.main",
+        "documentation": {}
+    },
+    {
+        "label": "build",
+        "kind": 2,
+        "importPath": "models.lstm.model",
+        "description": "models.lstm.model",
+        "peekOfCode": "def build(config, lstm_layers = [ 16, 32], dropout_layer = 0.5,\n                     dense_layer = 32 ) -> tf.keras.Model :\n    \"\"\"Build LSTM Net Neural\n    Args:\n        config ([type]): [description]\n        lstm_layers (list, optional): [description]. Defaults to [ 16, 32].\n        dropout_layer (float, optional): [description]. Defaults to 0.5.\n        dense_layer (int, optional): [description]. Defaults to 32.\n    Returns:\n        tf.keras.Model: [description]",
+        "detail": "models.lstm.model",
+        "documentation": {}
+    },
+    {
+        "label": "ExtendedTensorBoard",
+        "kind": 6,
+        "importPath": "models.lstm.tensorflow_extended",
+        "description": "models.lstm.tensorflow_extended",
+        "peekOfCode": "class ExtendedTensorBoard(tf.keras.callbacks.TensorBoard):\n  \"\"\"It's an extension of the [tf.keras.callbacks.TensorBoard] that writes training information\n  Args:\n      tf ([type]): [description]\n  \"\"\"\n  def __init__(self, test_dataset: tf.data.Dataset, logs_dir: str, histogram_freq: int = 1):\n    super(ExtendedTensorBoard, self).__init__(log_dir = logs_dir, histogram_freq = histogram_freq)\n    self.test_dataset = test_dataset\n  def _log_gradients(self, epoch: int):\n    \"\"\" Private method for writing weight gradients",
+        "detail": "models.lstm.tensorflow_extended",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "models.lstm.train",
+        "description": "models.lstm.train",
+        "peekOfCode": "def main(argv):\n    with mlflow.start_run():\n        args = parser.parse_args(argv[1:])\n        clear_fn = dataset.clear_data_fn(column_text=COLUMN_TEXT, column_label=COLUMN_LABEL)\n        df = dataset.load_from_file(args.path_dataset, clear_data_fn = clear_fn)\n        LOG.info(f'Dataset loaded from {args.path_dataset} with {len(df)} observations.')\n        tokenizer = dataset.fit_tokenizer(np.array(df['text'].values),args.vocab_size)\n        LOG.info(f'Fit tokenization and creating vocabulary')\n        transform_sequence = dataset.transform_to_sequence_fn(tokenizer=tokenizer, max_length=args.max_length)\n        split_ds = dataset.split_ds_fn()",
+        "detail": "models.lstm.train",
+        "documentation": {}
+    },
+    {
+        "label": "CHECKPOINT_PATH",
+        "kind": 5,
+        "importPath": "models.lstm.train",
+        "description": "models.lstm.train",
+        "peekOfCode": "CHECKPOINT_PATH = os.path.dirname(\"training_1/cp.ckpt\")\nCOLUMN_TEXT = 'text'\nCOLUMN_LABEL = 'text'\nDEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=int,help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=int, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default= 0.8, type=int,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")",
+        "detail": "models.lstm.train",
+        "documentation": {}
+    },
+    {
+        "label": "COLUMN_TEXT",
+        "kind": 5,
+        "importPath": "models.lstm.train",
+        "description": "models.lstm.train",
+        "peekOfCode": "COLUMN_TEXT = 'text'\nCOLUMN_LABEL = 'text'\nDEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=int,help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=int, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default= 0.8, type=int,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")\nparser.add_argument(\"--embedding_dim\", default= 16, type=int,help=\"number of embeddind dimension\")",
+        "detail": "models.lstm.train",
+        "documentation": {}
+    },
+    {
+        "label": "COLUMN_LABEL",
+        "kind": 5,
+        "importPath": "models.lstm.train",
+        "description": "models.lstm.train",
+        "peekOfCode": "COLUMN_LABEL = 'text'\nDEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=int,help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=int, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default= 0.8, type=int,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")\nparser.add_argument(\"--embedding_dim\", default= 16, type=int,help=\"number of embeddind dimension\")\nparser.add_argument(\"--max_length\", default= 120, type=int,help=\"max word length in sentence\")",
+        "detail": "models.lstm.train",
+        "documentation": {}
+    },
+    {
+        "label": "DEFAULT_DATASET_PATH",
+        "kind": 5,
+        "importPath": "models.lstm.train",
+        "description": "models.lstm.train",
+        "peekOfCode": "DEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=int,help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=int, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default= 0.8, type=int,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")\nparser.add_argument(\"--embedding_dim\", default= 16, type=int,help=\"number of embeddind dimension\")\nparser.add_argument(\"--max_length\", default= 120, type=int,help=\"max word length in sentence\")\nparser.add_argument(\"--batch_size\", default=128, type=int,help=\"batch size\")",
+        "detail": "models.lstm.train",
+        "documentation": {}
+    },
+    {
+        "label": "parser",
+        "kind": 5,
+        "importPath": "models.lstm.train",
+        "description": "models.lstm.train",
+        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=int,help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=int, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default= 0.8, type=int,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")\nparser.add_argument(\"--embedding_dim\", default= 16, type=int,help=\"number of embeddind dimension\")\nparser.add_argument(\"--max_length\", default= 120, type=int,help=\"max word length in sentence\")\nparser.add_argument(\"--batch_size\", default=128, type=int,help=\"batch size\")\nparser.add_argument(\"--num_epochs\", default=5, type=int,help=\"number of training steps\")",
+        "detail": "models.lstm.train",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "kind": 6,
+        "importPath": "models.basemodel",
+        "description": "models.basemodel",
+        "peekOfCode": "class BaseModel(object):\n    \"\"\"Abstract Model class that is inherited to all models\"\"\"\n    def __init__(self, config):\n        self.max_length = config.max_length\n        self.vocab_size = config.vocab_size\n        self.embedding_dim = config.embedding_dim\n        self.name = f'{config.project}-{int(time.time())}'\n        self.dropout = config.dropout\n        self.dense = config.dense\n    @abstractmethod",
+        "detail": "models.basemodel",
+        "documentation": {}
+    },
+    {
+        "label": "ExtendedTensorBoard",
+        "kind": 6,
+        "importPath": "utils.tensorflow_extended.tensorboard_extended",
+        "description": "utils.tensorflow_extended.tensorboard_extended",
+        "peekOfCode": "class ExtendedTensorBoard(tf.keras.callbacks.TensorBoard):\n  \"\"\"It's an extension of the [tf.keras.callbacks.TensorBoard] that writes training information\n  Args:\n      tf ([type]): [description]\n  \"\"\"\n  def __init__(self, test_dataset: tf.data.Dataset, logs_dir: str, histogram_freq: int = 1):\n    super(ExtendedTensorBoard, self).__init__(log_dir = logs_dir, histogram_freq = histogram_freq)\n    self.test_dataset = test_dataset\n  def _log_gradients(self, epoch: int):\n    \"\"\" Private method for writing weight gradients",
+        "detail": "utils.tensorflow_extended.tensorboard_extended",
+        "documentation": {}
+    },
+    {
+        "label": "get_logger",
+        "kind": 2,
+        "importPath": "utils.logger",
+        "description": "utils.logger",
+        "peekOfCode": "def get_logger(name: str) -> logging:\n    \"\"\"Logs a message\n    Args:\n    name(str): name of logger\n    \"\"\"\n    logger = logging.getLogger(name)\n    return logger",
+        "detail": "utils.logger",
+        "documentation": {}
+    }
+]
