@@ -1,5 +1,5 @@
-from olist_sentiment_analysis.dataset import SplitDatasetFnType, TransformToSeqFnType
-from typing import Tuple
+from dataset.types import SplitDatasetFnType, TransformToSeqFnType
+from typing import Callable, Tuple
 import pandas as pd
 import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -7,6 +7,10 @@ from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.text import tokenizer_from_json
 import numpy as np
 from toolz import curry
+
+ClearDataFnType = Callable[[pd.DataFrame], pd.DataFrame]
+SplitDatasetFnType = Callable[[tf.data.Dataset], Tuple[tf.data.Dataset, tf.data.Dataset]]
+TransformToSeqFnType = Callable[[np.array], tf.data.Dataset]
 
 
 @curry

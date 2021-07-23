@@ -1,14 +1,14 @@
-
-
-
 from logging import Logger
 import os
 import numpy as np
 import argparse
 
-from olist_sentiment_analysis import dataset
-from olist_sentiment_analysis.models import lstm 
-from olist_sentiment_analysis.utils.tensorflow_extended import ExtendedTensorBoard
+from dataset.load import load_from_file, clear_data_fn
+from dataset.preprocess import transform_to_sequence_fn, split_ds_fn, preprocess_fn
+from dataset.vectorizer import fit_tokenizer
+
+from models.lstm import model as lstm
+from utils.tensorflow_extended import ExtendedTensorBoard
 
 import tensorflow as tf
 
@@ -17,20 +17,22 @@ import mlflow.tensorflow
 mlflow.tensorflow.autolog()
 
 from utils.logger import get_logger
-from olist_sentiment_analysis.models.lstm.train import LOG
 
-LOG: Logger = get_logger('trainer')
+LOG = get_logger('LSTM_Trainer')
 
-CHECKPOINT_PATH = os.path.dirname("training_1/cp.ckpt")
-COLUMN_TEXT = 'text'
-COLUMN_LABEL = 'text'
+CHECKPOINT_PATH = os.path.dirname("checkpoints/lstm/cp.ckpt")
+MODEL_LOG_PATH = 'model_log/lstm'
+COLUMN_TEXT = 'review_comment_message'
+COLUMN_LABEL = 'review_score'
 
 DEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'
 
+
+
 parser = argparse.ArgumentParser()
-parser.add_argument("--path_dataset",default=DEFAULT_DATASET_PATH, type=int,help="dataset path")
-parser.add_argument("--lr", default=0.001, type=int, help="learning rate")
-parser.add_argument("--train_split", default= 0.8, type=int,help="number of divide dataset train")
+parser.add_argument("--path_dataset",default=DEFAULT_DATASET_PATH, type=str, help="dataset path")
+parser.add_argument("--lr", default=0.001, type=float, help="learning rate")
+parser.add_argument("--train_split", default=0.8, type=float,help="number of divide dataset train")
 parser.add_argument("--random_state", default= 42, type=int,help="random state")
 parser.add_argument("--vocab_size", default= 10000, type=int,help="vocabulary size")
 parser.add_argument("--embedding_dim", default= 16, type=int,help="number of embeddind dimension")
@@ -38,25 +40,25 @@ parser.add_argument("--max_length", default= 120, type=int,help="max word length
 parser.add_argument("--batch_size", default=128, type=int,help="batch size")
 parser.add_argument("--num_epochs", default=5, type=int,help="number of training steps")
 parser.add_argument("--early_stopping_criteria", default=2, type=int,help="early stop criteria")
-parser.add_argument("--dropout", default=0.3, type=int,help="dropout percentage")
-parser.add_argument("--model_storage", default="model_storage/lstm", type=int,help="model_storange")
+parser.add_argument("--dropout", default=0.3, type=float,help="dropout percentage")
+parser.add_argument("--model_storage", default="model_storage/lstm", type=str, help="model_storange")
 
-def main(argv):
-    with mlflow.start_run():
+def run_training(argv):
+    with mlflow.start_run(mlflow.set_experiment("olist_sentiment_analisis")):
         args = parser.parse_args(argv[1:])
 
-        clear_fn = dataset.clear_data_fn(column_text=COLUMN_TEXT, column_label=COLUMN_LABEL)
-        df = dataset.load_from_file(args.path_dataset, clear_data_fn = clear_fn)
+        clear_fn = clear_data_fn(column_text=COLUMN_TEXT, column_label=COLUMN_LABEL)
+        df = load_from_file(args.path_dataset, clear_fn = clear_fn)
         LOG.info(f'Dataset loaded from {args.path_dataset} with {len(df)} observations.')
 
-        tokenizer = dataset.fit_tokenizer(np.array(df['text'].values),args.vocab_size)
+        tokenizer = fit_tokenizer(np.array(df['text'].values),args.vocab_size)
         LOG.info(f'Fit tokenization and creating vocabulary')
 
-        transform_sequence = dataset.transform_to_sequence_fn(tokenizer=tokenizer, max_length=args.max_length)
+        transform_sequence = transform_to_sequence_fn(tokenizer=tokenizer, max_length=args.max_length)
 
-        split_ds = dataset.split_ds_fn()
+        split_ds = split_ds_fn()
 
-        train_dataset, val_dataset, test_dataset = dataset.preprocess_fn(df = df,
+        train_dataset, val_dataset, test_dataset = preprocess_fn(df = df,
                                                                 transfom_to_seq_fn = transform_sequence,
                                                                 split_ds_fn = split_ds)
         LOG.info(f'Apply preprocess into dataset')
@@ -66,7 +68,7 @@ def main(argv):
 
 
         earlyStoppingCallback = tf.keras.callbacks.EarlyStopping(monitor='loss', patience=args.early_stopping_criteria)
-        tensorflowBoardCallback = ExtendedTensorBoard(test_dataset=test_dataset)
+        tensorflowBoardCallback = ExtendedTensorBoard(test_dataset=test_dataset, logs_dir=MODEL_LOG_PATH)
         cp_callback = tf.keras.callbacks.ModelCheckpoint(filepath=CHECKPOINT_PATH,
                                                  save_weights_only=True,
                                                  verbose=1)
@@ -82,20 +84,19 @@ def main(argv):
 
         LOG.info(f'Compile model with lr: {args.lr}')
 
+        train_dataset = train_dataset.batch(32)
+        val_dataset = val_dataset.batch(32)
         history = model.fit(
             train_dataset,
-            validation_set=val_dataset,
+            validation_data=val_dataset,
+            validation_steps=10,
             epochs=args.num_epochs,
-            batch_size=args.batch_size,
             callbacks= callbacks,
         )
         LOG.info(f'Fit model for {args.num_epochs}')
 
         # Evaluate the model
         print("Evaluate")
-        result = model.evaluate(test_dataset)
+        result = model.evaluate(test_dataset.batch(32))
         print(dict(zip(model.metrics_names, result)))
 
-
-if __name__ == "__main__" :
-    main(os.system.argv)

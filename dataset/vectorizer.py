@@ -5,11 +5,11 @@ from tensorflow.keras.preprocessing.text import tokenizer_from_json
 import os
 import numpy as np
 
-def load_tokenizer(vectorizer_file: str = 'vectorizer.json',  vocab_size: int = None) -> Tokenizer:
+def load_tokenizer(vectorizer_file: str = 'resources/vectorizer.json',  vocab_size: int = None) -> Tokenizer:
     """Load tokenizer from file or Create a new with [vocab_size]
 
     Args:
-        vectorizer_file (str, optional): Vectorizer file path. Defaults to 'vectorizer.json'.
+        vectorizer_file (str, optional): Vectorizer file path. Defaults to 'resources/vectorizer.json'.
         vocab_size (int, optional): Vocabulary Size. Defaults to None.
 
     Raises:
@@ -28,12 +28,12 @@ def load_tokenizer(vectorizer_file: str = 'vectorizer.json',  vocab_size: int = 
             raise Exception('vocab_size', 'Vocabulary size is required to build a new tokenizer')
         return Tokenizer(num_words = vocab_size, oov_token="<OOV>")
 
-def save_tokenizer(tokenizer: Tokenizer, vectorizer_file: str = 'vectorizer.json') -> None:
+def save_tokenizer(tokenizer: Tokenizer, vectorizer_file: str = 'resources/vectorizer.json') -> None:
     """Save tokenizer in [vectorizer_file]
 
     Args:
         tokenizer (Tokenizer): Tensorflow Tokenizer
-        vectorizer_file (str, optional): Vectorizer file path. Defaults to 'vectorizer.json'.
+        vectorizer_file (str, optional): Vectorizer file path. Defaults to 'resources/vectorizer.json'.
     """
     
     tokenizer_json = tokenizer.to_json()
@@ -41,7 +41,7 @@ def save_tokenizer(tokenizer: Tokenizer, vectorizer_file: str = 'vectorizer.json
         f.write(json.dumps(tokenizer_json, ensure_ascii=False))
 
 def fit_tokenizer(sentences: np.array, vocab_size: int) -> Tokenizer:
-    tokenizer: load_tokenizer(vocab_size=vocab_size)
+    tokenizer = load_tokenizer(vocab_size=vocab_size)
     tokenizer.fit_on_texts(sentences)
 
     save_tokenizer(tokenizer)

@@ -1,0 +1,9 @@
+name: olist_sentiment_analisis
+channels:
+  - defaults
+dependencies:
+  - python=3.6
+  - pip
+  - pip:
+    - tensorflow==2.5.0
+    - mlflow>=1.0

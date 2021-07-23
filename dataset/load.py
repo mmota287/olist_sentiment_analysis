@@ -1,15 +1,10 @@
 """Data Loader"""
 
-from olist_sentiment_analysis.dataset import ClearDataFnType
-from typing import Any, Callable
+from dataset.types import ClearDataFnType
 from numpy.core.records import array
-import tensorflow as tf
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.preprocessing.text import tokenizer_from_json
 import pandas as pd
-import numpy as np
 from toolz import curry
+pd.options.mode.chained_assignment = None  # default='warn'
 
 
 def load_from_file(path: str, clear_fn: ClearDataFnType) -> pd.DataFrame:

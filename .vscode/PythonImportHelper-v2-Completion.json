@@ -76,7 +76,73 @@
         "documentation": {}
     },
     {
-        "label": "Any",
+        "label": "ClearDataFnType",
+        "importPath": "dataset.types",
+        "description": "dataset.types",
+        "isExtraImport": true,
+        "detail": "dataset.types",
+        "documentation": {}
+    },
+    {
+        "label": "SplitDatasetFnType",
+        "importPath": "dataset.types",
+        "description": "dataset.types",
+        "isExtraImport": true,
+        "detail": "dataset.types",
+        "documentation": {}
+    },
+    {
+        "label": "TransformToSeqFnType",
+        "importPath": "dataset.types",
+        "description": "dataset.types",
+        "isExtraImport": true,
+        "detail": "dataset.types",
+        "documentation": {}
+    },
+    {
+        "label": "numpy.core.records",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy.core.records",
+        "description": "numpy.core.records",
+        "detail": "numpy.core.records",
+        "documentation": {}
+    },
+    {
+        "label": "array",
+        "importPath": "numpy.core.records",
+        "description": "numpy.core.records",
+        "isExtraImport": true,
+        "detail": "numpy.core.records",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "curry",
+        "importPath": "toolz",
+        "description": "toolz",
+        "isExtraImport": true,
+        "detail": "toolz",
+        "documentation": {}
+    },
+    {
+        "label": "curry",
+        "importPath": "toolz",
+        "description": "toolz",
+        "isExtraImport": true,
+        "detail": "toolz",
+        "documentation": {}
+    },
+    {
+        "label": "Callable",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -84,15 +150,7 @@
         "documentation": {}
     },
     {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Any",
+        "label": "Tuple",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -132,95 +190,6 @@
         "documentation": {}
     },
     {
-        "label": "ClearDataFnType",
-        "importPath": "olist_sentiment_analysis.dataset",
-        "description": "olist_sentiment_analysis.dataset",
-        "isExtraImport": true,
-        "detail": "olist_sentiment_analysis.dataset",
-        "documentation": {}
-    },
-    {
-        "label": "SplitDatasetFnType",
-        "importPath": "olist_sentiment_analysis.dataset",
-        "description": "olist_sentiment_analysis.dataset",
-        "isExtraImport": true,
-        "detail": "olist_sentiment_analysis.dataset",
-        "documentation": {}
-    },
-    {
-        "label": "TransformToSeqFnType",
-        "importPath": "olist_sentiment_analysis.dataset",
-        "description": "olist_sentiment_analysis.dataset",
-        "isExtraImport": true,
-        "detail": "olist_sentiment_analysis.dataset",
-        "documentation": {}
-    },
-    {
-        "label": "numpy.core.records",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "numpy.core.records",
-        "description": "numpy.core.records",
-        "detail": "numpy.core.records",
-        "documentation": {}
-    },
-    {
-        "label": "array",
-        "importPath": "numpy.core.records",
-        "description": "numpy.core.records",
-        "isExtraImport": true,
-        "detail": "numpy.core.records",
-        "documentation": {}
-    },
-    {
-        "label": "Tokenizer",
-        "importPath": "tensorflow.keras.preprocessing.text",
-        "description": "tensorflow.keras.preprocessing.text",
-        "isExtraImport": true,
-        "detail": "tensorflow.keras.preprocessing.text",
-        "documentation": {}
-    },
-    {
-        "label": "tokenizer_from_json",
-        "importPath": "tensorflow.keras.preprocessing.text",
-        "description": "tensorflow.keras.preprocessing.text",
-        "isExtraImport": true,
-        "detail": "tensorflow.keras.preprocessing.text",
-        "documentation": {}
-    },
-    {
-        "label": "Tokenizer",
-        "importPath": "tensorflow.keras.preprocessing.text",
-        "description": "tensorflow.keras.preprocessing.text",
-        "isExtraImport": true,
-        "detail": "tensorflow.keras.preprocessing.text",
-        "documentation": {}
-    },
-    {
-        "label": "tokenizer_from_json",
-        "importPath": "tensorflow.keras.preprocessing.text",
-        "description": "tensorflow.keras.preprocessing.text",
-        "isExtraImport": true,
-        "detail": "tensorflow.keras.preprocessing.text",
-        "documentation": {}
-    },
-    {
-        "label": "Tokenizer",
-        "importPath": "tensorflow.keras.preprocessing.text",
-        "description": "tensorflow.keras.preprocessing.text",
-        "isExtraImport": true,
-        "detail": "tensorflow.keras.preprocessing.text",
-        "documentation": {}
-    },
-    {
-        "label": "tokenizer_from_json",
-        "importPath": "tensorflow.keras.preprocessing.text",
-        "description": "tensorflow.keras.preprocessing.text",
-        "isExtraImport": true,
-        "detail": "tensorflow.keras.preprocessing.text",
-        "documentation": {}
-    },
-    {
         "label": "pad_sequences",
         "importPath": "tensorflow.keras.preprocessing.sequence",
         "description": "tensorflow.keras.preprocessing.sequence",
@@ -229,36 +198,35 @@
         "documentation": {}
     },
     {
-        "label": "pad_sequences",
-        "importPath": "tensorflow.keras.preprocessing.sequence",
-        "description": "tensorflow.keras.preprocessing.sequence",
+        "label": "Tokenizer",
+        "importPath": "tensorflow.keras.preprocessing.text",
+        "description": "tensorflow.keras.preprocessing.text",
         "isExtraImport": true,
-        "detail": "tensorflow.keras.preprocessing.sequence",
+        "detail": "tensorflow.keras.preprocessing.text",
         "documentation": {}
     },
     {
-        "label": "pandas",
-        "kind": 6,
+        "label": "tokenizer_from_json",
+        "importPath": "tensorflow.keras.preprocessing.text",
+        "description": "tensorflow.keras.preprocessing.text",
         "isExtraImport": true,
-        "importPath": "pandas",
-        "description": "pandas",
-        "detail": "pandas",
+        "detail": "tensorflow.keras.preprocessing.text",
         "documentation": {}
     },
     {
-        "label": "curry",
-        "importPath": "toolz",
-        "description": "toolz",
+        "label": "Tokenizer",
+        "importPath": "tensorflow.keras.preprocessing.text",
+        "description": "tensorflow.keras.preprocessing.text",
         "isExtraImport": true,
-        "detail": "toolz",
+        "detail": "tensorflow.keras.preprocessing.text",
         "documentation": {}
     },
     {
-        "label": "curry",
-        "importPath": "toolz",
-        "description": "toolz",
+        "label": "tokenizer_from_json",
+        "importPath": "tensorflow.keras.preprocessing.text",
+        "description": "tensorflow.keras.preprocessing.text",
         "isExtraImport": true,
-        "detail": "toolz",
+        "detail": "tensorflow.keras.preprocessing.text",
         "documentation": {}
     },
     {
@@ -337,27 +305,67 @@
         "documentation": {}
     },
     {
-        "label": "dataset",
-        "importPath": "olist_sentiment_analysis",
-        "description": "olist_sentiment_analysis",
+        "label": "load_from_file",
+        "importPath": "dataset.load",
+        "description": "dataset.load",
         "isExtraImport": true,
-        "detail": "olist_sentiment_analysis",
+        "detail": "dataset.load",
         "documentation": {}
     },
     {
-        "label": "lstm",
-        "importPath": "olist_sentiment_analysis.models",
-        "description": "olist_sentiment_analysis.models",
+        "label": "clear_data_fn",
+        "importPath": "dataset.load",
+        "description": "dataset.load",
         "isExtraImport": true,
-        "detail": "olist_sentiment_analysis.models",
+        "detail": "dataset.load",
+        "documentation": {}
+    },
+    {
+        "label": "transform_to_sequence_fn",
+        "importPath": "dataset.preprocess",
+        "description": "dataset.preprocess",
+        "isExtraImport": true,
+        "detail": "dataset.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "split_ds_fn",
+        "importPath": "dataset.preprocess",
+        "description": "dataset.preprocess",
+        "isExtraImport": true,
+        "detail": "dataset.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_fn",
+        "importPath": "dataset.preprocess",
+        "description": "dataset.preprocess",
+        "isExtraImport": true,
+        "detail": "dataset.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "fit_tokenizer",
+        "importPath": "dataset.vectorizer",
+        "description": "dataset.vectorizer",
+        "isExtraImport": true,
+        "detail": "dataset.vectorizer",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "importPath": "models.lstm",
+        "description": "models.lstm",
+        "isExtraImport": true,
+        "detail": "models.lstm",
         "documentation": {}
     },
     {
         "label": "ExtendedTensorBoard",
-        "importPath": "olist_sentiment_analysis.utils.tensorflow_extended",
-        "description": "olist_sentiment_analysis.utils.tensorflow_extended",
+        "importPath": "utils.tensorflow_extended",
+        "description": "utils.tensorflow_extended",
         "isExtraImport": true,
-        "detail": "olist_sentiment_analysis.utils.tensorflow_extended",
+        "detail": "utils.tensorflow_extended",
         "documentation": {}
     },
     {
@@ -384,14 +392,6 @@
         "description": "utils.logger",
         "isExtraImport": true,
         "detail": "utils.logger",
-        "documentation": {}
-    },
-    {
-        "label": "LOG",
-        "importPath": "olist_sentiment_analysis.models.lstm.train",
-        "description": "olist_sentiment_analysis.models.lstm.train",
-        "isExtraImport": true,
-        "detail": "olist_sentiment_analysis.models.lstm.train",
         "documentation": {}
     },
     {
@@ -438,6 +438,23 @@
         "documentation": {}
     },
     {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "run_training",
+        "importPath": "models.lstm.train",
+        "description": "models.lstm.train",
+        "isExtraImport": true,
+        "detail": "models.lstm.train",
+        "documentation": {}
+    },
+    {
         "label": "classify_sentence",
         "kind": 2,
         "importPath": "app.app",
@@ -456,15 +473,6 @@
         "documentation": {}
     },
     {
-        "label": "ConfigModelType",
-        "kind": 5,
-        "importPath": "configs.types",
-        "description": "configs.types",
-        "peekOfCode": "ConfigModelType = Dict[str, Any]",
-        "detail": "configs.types",
-        "documentation": {}
-    },
-    {
         "label": "load_from_file",
         "kind": 2,
         "importPath": "dataset.load",
@@ -479,6 +487,15 @@
         "importPath": "dataset.load",
         "description": "dataset.load",
         "peekOfCode": "def clear_data_fn(df: pd.DataFrame, column_text: str, column_label: str,\n        bins: array = [0, 2, 5], classes: array = [0,1]) -> pd.DataFrame:\n    \"\"\"\n    Clear dataframe loaded\n    Args:\n        df (pd.DataFrame): Dataframe loaded\n        column_text (str): Column text\n        column_label (str): Column label\n        bins (array, optional): Column score. Defaults to [].\n        classes (array, optional): Sentiments classe. Defaults to [0,1].",
+        "detail": "dataset.load",
+        "documentation": {}
+    },
+    {
+        "label": "pd.options.mode.chained_assignment",
+        "kind": 5,
+        "importPath": "dataset.load",
+        "description": "dataset.load",
+        "peekOfCode": "pd.options.mode.chained_assignment = None  # default='warn'\ndef load_from_file(path: str, clear_fn: ClearDataFnType) -> pd.DataFrame:\n    \"\"\"Load Dataset from file\n    Args:\n        path (str): File path\n        clear_fn (ClearDataFnType): Clear function\n    Returns:\n        pd.DataFrame: Dataframe loaded\n    \"\"\"\n    df = pd.read_csv(path)",
         "detail": "dataset.load",
         "documentation": {}
     },
@@ -510,11 +527,65 @@
         "documentation": {}
     },
     {
+        "label": "ClearDataFnType",
+        "kind": 5,
+        "importPath": "dataset.preprocess",
+        "description": "dataset.preprocess",
+        "peekOfCode": "ClearDataFnType = Callable[[pd.DataFrame], pd.DataFrame]\nSplitDatasetFnType = Callable[[tf.data.Dataset], Tuple[tf.data.Dataset, tf.data.Dataset]]\nTransformToSeqFnType = Callable[[np.array], tf.data.Dataset]\n@curry\ndef transform_to_sequence_fn(\n        sentences: np.array,\n        tokenizer: Tokenizer,\n        max_length: int) -> np.array:\n    \"\"\"Transfom sentences into sequences padded\n    Args:",
+        "detail": "dataset.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "SplitDatasetFnType",
+        "kind": 5,
+        "importPath": "dataset.preprocess",
+        "description": "dataset.preprocess",
+        "peekOfCode": "SplitDatasetFnType = Callable[[tf.data.Dataset], Tuple[tf.data.Dataset, tf.data.Dataset]]\nTransformToSeqFnType = Callable[[np.array], tf.data.Dataset]\n@curry\ndef transform_to_sequence_fn(\n        sentences: np.array,\n        tokenizer: Tokenizer,\n        max_length: int) -> np.array:\n    \"\"\"Transfom sentences into sequences padded\n    Args:\n        sentences (np.array): Sequences",
+        "detail": "dataset.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "TransformToSeqFnType",
+        "kind": 5,
+        "importPath": "dataset.preprocess",
+        "description": "dataset.preprocess",
+        "peekOfCode": "TransformToSeqFnType = Callable[[np.array], tf.data.Dataset]\n@curry\ndef transform_to_sequence_fn(\n        sentences: np.array,\n        tokenizer: Tokenizer,\n        max_length: int) -> np.array:\n    \"\"\"Transfom sentences into sequences padded\n    Args:\n        sentences (np.array): Sequences\n        tokenizer (Tokenizer): Tensorflow Tokenizer",
+        "detail": "dataset.preprocess",
+        "documentation": {}
+    },
+    {
+        "label": "ClearDataFnType",
+        "kind": 5,
+        "importPath": "dataset.types",
+        "description": "dataset.types",
+        "peekOfCode": "ClearDataFnType = Callable[[pd.DataFrame], pd.DataFrame]\nSplitDatasetFnType = Callable[[tf.data.Dataset], Tuple[tf.data.Dataset, tf.data.Dataset]]\nTransformToSeqFnType = Callable[[np.array], tf.data.Dataset]",
+        "detail": "dataset.types",
+        "documentation": {}
+    },
+    {
+        "label": "SplitDatasetFnType",
+        "kind": 5,
+        "importPath": "dataset.types",
+        "description": "dataset.types",
+        "peekOfCode": "SplitDatasetFnType = Callable[[tf.data.Dataset], Tuple[tf.data.Dataset, tf.data.Dataset]]\nTransformToSeqFnType = Callable[[np.array], tf.data.Dataset]",
+        "detail": "dataset.types",
+        "documentation": {}
+    },
+    {
+        "label": "TransformToSeqFnType",
+        "kind": 5,
+        "importPath": "dataset.types",
+        "description": "dataset.types",
+        "peekOfCode": "TransformToSeqFnType = Callable[[np.array], tf.data.Dataset]",
+        "detail": "dataset.types",
+        "documentation": {}
+    },
+    {
         "label": "load_tokenizer",
         "kind": 2,
         "importPath": "dataset.vectorizer",
         "description": "dataset.vectorizer",
-        "peekOfCode": "def load_tokenizer(vectorizer_file: str = 'vectorizer.json',  vocab_size: int = None) -> Tokenizer:\n    \"\"\"Load tokenizer from file or Create a new with [vocab_size]\n    Args:\n        vectorizer_file (str, optional): Vectorizer file path. Defaults to 'vectorizer.json'.\n        vocab_size (int, optional): Vocabulary Size. Defaults to None.\n    Raises:\n        Exception: If notfound [vectorizer_file] and not informed [vocab_size]\n    Returns:\n        Tokenizer: Tensorflow Tokenizer\n    \"\"\"",
+        "peekOfCode": "def load_tokenizer(vectorizer_file: str = 'resources/vectorizer.json',  vocab_size: int = None) -> Tokenizer:\n    \"\"\"Load tokenizer from file or Create a new with [vocab_size]\n    Args:\n        vectorizer_file (str, optional): Vectorizer file path. Defaults to 'resources/vectorizer.json'.\n        vocab_size (int, optional): Vocabulary Size. Defaults to None.\n    Raises:\n        Exception: If notfound [vectorizer_file] and not informed [vocab_size]\n    Returns:\n        Tokenizer: Tensorflow Tokenizer\n    \"\"\"",
         "detail": "dataset.vectorizer",
         "documentation": {}
     },
@@ -523,7 +594,7 @@
         "kind": 2,
         "importPath": "dataset.vectorizer",
         "description": "dataset.vectorizer",
-        "peekOfCode": "def save_tokenizer(tokenizer: Tokenizer, vectorizer_file: str = 'vectorizer.json') -> None:\n    \"\"\"Save tokenizer in [vectorizer_file]\n    Args:\n        tokenizer (Tokenizer): Tensorflow Tokenizer\n        vectorizer_file (str, optional): Vectorizer file path. Defaults to 'vectorizer.json'.\n    \"\"\"\n    tokenizer_json = tokenizer.to_json()\n    with io.open(vectorizer_file, 'w', encoding='utf-8') as f:\n        f.write(json.dumps(tokenizer_json, ensure_ascii=False))\ndef fit_tokenizer(sentences: np.array, vocab_size: int) -> Tokenizer:",
+        "peekOfCode": "def save_tokenizer(tokenizer: Tokenizer, vectorizer_file: str = 'resources/vectorizer.json') -> None:\n    \"\"\"Save tokenizer in [vectorizer_file]\n    Args:\n        tokenizer (Tokenizer): Tensorflow Tokenizer\n        vectorizer_file (str, optional): Vectorizer file path. Defaults to 'resources/vectorizer.json'.\n    \"\"\"\n    tokenizer_json = tokenizer.to_json()\n    with io.open(vectorizer_file, 'w', encoding='utf-8') as f:\n        f.write(json.dumps(tokenizer_json, ensure_ascii=False))\ndef fit_tokenizer(sentences: np.array, vocab_size: int) -> Tokenizer:",
         "detail": "dataset.vectorizer",
         "documentation": {}
     },
@@ -532,7 +603,7 @@
         "kind": 2,
         "importPath": "dataset.vectorizer",
         "description": "dataset.vectorizer",
-        "peekOfCode": "def fit_tokenizer(sentences: np.array, vocab_size: int) -> Tokenizer:\n    tokenizer: load_tokenizer(vocab_size=vocab_size)\n    tokenizer.fit_on_texts(sentences)\n    save_tokenizer(tokenizer)\n    return tokenizer",
+        "peekOfCode": "def fit_tokenizer(sentences: np.array, vocab_size: int) -> Tokenizer:\n    tokenizer = load_tokenizer(vocab_size=vocab_size)\n    tokenizer.fit_on_texts(sentences)\n    save_tokenizer(tokenizer)\n    return tokenizer",
         "detail": "dataset.vectorizer",
         "documentation": {}
     },
@@ -582,11 +653,20 @@
         "documentation": {}
     },
     {
-        "label": "main",
+        "label": "run_training",
         "kind": 2,
         "importPath": "models.lstm.train",
         "description": "models.lstm.train",
-        "peekOfCode": "def main(argv):\n    with mlflow.start_run():\n        args = parser.parse_args(argv[1:])\n        clear_fn = dataset.clear_data_fn(column_text=COLUMN_TEXT, column_label=COLUMN_LABEL)\n        df = dataset.load_from_file(args.path_dataset, clear_data_fn = clear_fn)\n        LOG.info(f'Dataset loaded from {args.path_dataset} with {len(df)} observations.')\n        tokenizer = dataset.fit_tokenizer(np.array(df['text'].values),args.vocab_size)\n        LOG.info(f'Fit tokenization and creating vocabulary')\n        transform_sequence = dataset.transform_to_sequence_fn(tokenizer=tokenizer, max_length=args.max_length)\n        split_ds = dataset.split_ds_fn()",
+        "peekOfCode": "def run_training(argv):\n    with mlflow.start_run(mlflow.set_experiment(\"olist_sentiment_analisis\")):\n        args = parser.parse_args(argv[1:])\n        clear_fn = clear_data_fn(column_text=COLUMN_TEXT, column_label=COLUMN_LABEL)\n        df = load_from_file(args.path_dataset, clear_fn = clear_fn)\n        LOG.info(f'Dataset loaded from {args.path_dataset} with {len(df)} observations.')\n        tokenizer = fit_tokenizer(np.array(df['text'].values),args.vocab_size)\n        LOG.info(f'Fit tokenization and creating vocabulary')\n        transform_sequence = transform_to_sequence_fn(tokenizer=tokenizer, max_length=args.max_length)\n        split_ds = split_ds_fn()",
+        "detail": "models.lstm.train",
+        "documentation": {}
+    },
+    {
+        "label": "LOG",
+        "kind": 5,
+        "importPath": "models.lstm.train",
+        "description": "models.lstm.train",
+        "peekOfCode": "LOG = get_logger('LSTM_Trainer')\nCHECKPOINT_PATH = os.path.dirname(\"checkpoints/lstm/cp.ckpt\")\nMODEL_LOG_PATH = 'model_log/lstm'\nCOLUMN_TEXT = 'review_comment_message'\nCOLUMN_LABEL = 'review_score'\nDEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=str, help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=float, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default=0.8, type=float,help=\"number of divide dataset train\")",
         "detail": "models.lstm.train",
         "documentation": {}
     },
@@ -595,7 +675,16 @@
         "kind": 5,
         "importPath": "models.lstm.train",
         "description": "models.lstm.train",
-        "peekOfCode": "CHECKPOINT_PATH = os.path.dirname(\"training_1/cp.ckpt\")\nCOLUMN_TEXT = 'text'\nCOLUMN_LABEL = 'text'\nDEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=int,help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=int, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default= 0.8, type=int,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")",
+        "peekOfCode": "CHECKPOINT_PATH = os.path.dirname(\"checkpoints/lstm/cp.ckpt\")\nMODEL_LOG_PATH = 'model_log/lstm'\nCOLUMN_TEXT = 'review_comment_message'\nCOLUMN_LABEL = 'review_score'\nDEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=str, help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=float, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default=0.8, type=float,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")",
+        "detail": "models.lstm.train",
+        "documentation": {}
+    },
+    {
+        "label": "MODEL_LOG_PATH",
+        "kind": 5,
+        "importPath": "models.lstm.train",
+        "description": "models.lstm.train",
+        "peekOfCode": "MODEL_LOG_PATH = 'model_log/lstm'\nCOLUMN_TEXT = 'review_comment_message'\nCOLUMN_LABEL = 'review_score'\nDEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=str, help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=float, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default=0.8, type=float,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")",
         "detail": "models.lstm.train",
         "documentation": {}
     },
@@ -604,7 +693,7 @@
         "kind": 5,
         "importPath": "models.lstm.train",
         "description": "models.lstm.train",
-        "peekOfCode": "COLUMN_TEXT = 'text'\nCOLUMN_LABEL = 'text'\nDEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=int,help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=int, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default= 0.8, type=int,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")\nparser.add_argument(\"--embedding_dim\", default= 16, type=int,help=\"number of embeddind dimension\")",
+        "peekOfCode": "COLUMN_TEXT = 'review_comment_message'\nCOLUMN_LABEL = 'review_score'\nDEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=str, help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=float, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default=0.8, type=float,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")\nparser.add_argument(\"--embedding_dim\", default= 16, type=int,help=\"number of embeddind dimension\")",
         "detail": "models.lstm.train",
         "documentation": {}
     },
@@ -613,7 +702,7 @@
         "kind": 5,
         "importPath": "models.lstm.train",
         "description": "models.lstm.train",
-        "peekOfCode": "COLUMN_LABEL = 'text'\nDEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=int,help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=int, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default= 0.8, type=int,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")\nparser.add_argument(\"--embedding_dim\", default= 16, type=int,help=\"number of embeddind dimension\")\nparser.add_argument(\"--max_length\", default= 120, type=int,help=\"max word length in sentence\")",
+        "peekOfCode": "COLUMN_LABEL = 'review_score'\nDEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=str, help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=float, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default=0.8, type=float,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")\nparser.add_argument(\"--embedding_dim\", default= 16, type=int,help=\"number of embeddind dimension\")\nparser.add_argument(\"--max_length\", default= 120, type=int,help=\"max word length in sentence\")",
         "detail": "models.lstm.train",
         "documentation": {}
     },
@@ -622,7 +711,7 @@
         "kind": 5,
         "importPath": "models.lstm.train",
         "description": "models.lstm.train",
-        "peekOfCode": "DEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=int,help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=int, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default= 0.8, type=int,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")\nparser.add_argument(\"--embedding_dim\", default= 16, type=int,help=\"number of embeddind dimension\")\nparser.add_argument(\"--max_length\", default= 120, type=int,help=\"max word length in sentence\")\nparser.add_argument(\"--batch_size\", default=128, type=int,help=\"batch size\")",
+        "peekOfCode": "DEFAULT_DATASET_PATH = 'https://raw.githubusercontent.com/MarcosMota/AnaliseDeSentimento/master/dataset/olist_order_reviews_dataset.csv'\nparser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=str, help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=float, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default=0.8, type=float,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")\nparser.add_argument(\"--embedding_dim\", default= 16, type=int,help=\"number of embeddind dimension\")\nparser.add_argument(\"--max_length\", default= 120, type=int,help=\"max word length in sentence\")\nparser.add_argument(\"--batch_size\", default=128, type=int,help=\"batch size\")",
         "detail": "models.lstm.train",
         "documentation": {}
     },
@@ -631,7 +720,7 @@
         "kind": 5,
         "importPath": "models.lstm.train",
         "description": "models.lstm.train",
-        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=int,help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=int, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default= 0.8, type=int,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")\nparser.add_argument(\"--embedding_dim\", default= 16, type=int,help=\"number of embeddind dimension\")\nparser.add_argument(\"--max_length\", default= 120, type=int,help=\"max word length in sentence\")\nparser.add_argument(\"--batch_size\", default=128, type=int,help=\"batch size\")\nparser.add_argument(\"--num_epochs\", default=5, type=int,help=\"number of training steps\")",
+        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument(\"--path_dataset\",default=DEFAULT_DATASET_PATH, type=str, help=\"dataset path\")\nparser.add_argument(\"--lr\", default=0.001, type=float, help=\"learning rate\")\nparser.add_argument(\"--train_split\", default=0.8, type=float,help=\"number of divide dataset train\")\nparser.add_argument(\"--random_state\", default= 42, type=int,help=\"random state\")\nparser.add_argument(\"--vocab_size\", default= 10000, type=int,help=\"vocabulary size\")\nparser.add_argument(\"--embedding_dim\", default= 16, type=int,help=\"number of embeddind dimension\")\nparser.add_argument(\"--max_length\", default= 120, type=int,help=\"max word length in sentence\")\nparser.add_argument(\"--batch_size\", default=128, type=int,help=\"batch size\")\nparser.add_argument(\"--num_epochs\", default=5, type=int,help=\"number of training steps\")",
         "detail": "models.lstm.train",
         "documentation": {}
     },
