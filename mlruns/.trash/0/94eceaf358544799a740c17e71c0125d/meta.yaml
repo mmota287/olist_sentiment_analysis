@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Mota/Documents/projetos/DeepLearning/nlp/sentiment-analysis/olist_sentiment_analysis/mlruns/0/94eceaf358544799a740c17e71c0125d/artifacts
+end_time: 1627050410409
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: deleted
+name: ''
+run_id: 94eceaf358544799a740c17e71c0125d
+run_uuid: 94eceaf358544799a740c17e71c0125d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1627050406325
+status: 4
+tags: []
+user_id: Mota

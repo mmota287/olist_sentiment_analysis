@@ -11,17 +11,19 @@ This project was built with the following frameworks and libraries
 Attempt |
 - Numpy
 
-## Instalation
+## Usage
+
+### Installation
 ```
 conda env create -f conda.yaml
 conda activate olist_sentiment_analisis
 ```
 
-## Training Model
+### Training Model
 ```
 python main.py <options>
 ```
-### Options
+#### Options
 
 Options | Description | Default
 --- | --- | --- 
@@ -38,7 +40,12 @@ Options | Description | Default
 --dropout | dropout percentage | 0.3
 --model_storage | model_storange | model_storage/lstm
 
-## Server model with MLFlow
+### MLFlow UI
+```
+mlflow ui
+```
+
+### Server model with MLFlow
 
 ```
 mlflow models serve -m runs:/1addb128068e4cff8292f671dfab48fe/model
