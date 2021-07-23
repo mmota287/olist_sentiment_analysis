@@ -48,7 +48,7 @@ mlflow ui
 ### Server model with MLFlow
 
 ```
-mlflow models serve -m runs:/1addb128068e4cff8292f671dfab48fe/model
+mlflow models serve -m runs:/<run_id>/model
 ```
 
 
